@@ -1,4 +1,4 @@
-# Move to ~/.pagerduty.cfg
+# Move to pagerduty.cfg
 
 [PagerDuty]
 # The following information can be found when signing in and viewing your

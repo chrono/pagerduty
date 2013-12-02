@@ -38,10 +38,9 @@ def get_authentication():
     if authenticated:
         return
 
-    configfile = os.path.join(os.path.expanduser('~'), '.pagerduty.cfg')
-
+    configfile = 'pagerduty.cfg'
     if not os.path.exists(configfile):
-        sys.stderr.write('Move pagerduty.cfg to ~/.pagerduty.cfg to begin.\n')
+        sys.stderr.write('Copy pagerduty.cfg-sample to {0} to begin.\n'.format(configfile))
         sys.exit(1)
     else:
         config = ConfigParser.RawConfigParser()
